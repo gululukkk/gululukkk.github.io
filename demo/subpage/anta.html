@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>仿安踏官网图片轮播</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/anta.css">
+</head>
+<body>
+	<div class="container-fluid" id="wrap">
+		<div class="row firstRow text-center">
+			<span class="firstRow__welcome">
+                    欢迎来到安踏！
+                </span>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col12">
+				<div class="menu text-center">
+					<a class="logo" href="">
+						<img src="../images/anta_logo.png" alt="">
+					</a>
+					<nav class="topNav">
+						<a class="topNav__item" href="">篮球</a>
+						<a class="topNav__item" href="">跑步</a>
+						<a class="topNav__item" href="">综训</a>
+						<a class="topNav__item" href="">户外</a>
+						<a class="topNav__item" href="">休闲运动</a>
+						<a class="topNav__item" href="">配件</a>
+					</nav>
+					<nav class="phoneNav">
+						<a href="" class="phoneNav__wrap">
+							<div class="phoneNav__menuBtn"></div>
+						</a>
+						<a href="" class="phoneNav__languageBtn">
+							<img src="../images/languagebtn.png" alt="">
+						</a>
+						<a href="" class="phoneNav__userBtn">
+							<img src="../images/user.png" alt="">
+						</a>
+
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col12">
+				<div id="shoePicPlay" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="2000">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#shoePicPlay" data-slide-to="0" class="active"></li>
+						<li data-target="#shoePicPlay" data-slide-to="1"></li>
+						<li data-target="#shoePicPlay" data-slide-to="2"></li>
+					</ol>
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<a class="item active" href="">
+							<img src="../images/anta1.jpg" alt="First slide">
+						</a>
+						<a class="item" href="">
+							<img src="../images/anta2.jpg" alt="Second slide">
+						</a>
+						<a class="item" href="">
+							<img src="../images/anta3.jpg" alt="Third slide">
+						</a>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="carousel-control left" href="#shoePicPlay" data-slide="prev">&lsaquo;</a>
+					<a class="carousel-control right" href="#shoePicPlay" data-slide="next">&rsaquo;</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="classify">
+					<div class="thumbnail">
+						<div class="thumbnail__img">
+							<img src="../images/thumbnail1.jpg" alt="">
+						</div>
+						<h2 class="thumbnail__title">在线商城</h2>
+						<a href="" class="thumbnail__link"><i class="thumbnail__arrow">&gt;</i>热销商品</a>
+					</div>
+					<div class="thumbnail">
+						<div class="thumbnail__img">
+							<img src="../images/thumbnail2.jpg" alt="">
+						</div>
+						<h2 class="thumbnail__title">安踏科技</h2>
+						<a href="" class="thumbnail__link"><i class="thumbnail__arrow">&gt;</i>热销商品</a>
+					</div>
+					<div class="thumbnail">
+						<div class="thumbnail__img">
+							<img src="../images/thumbnail3.jpg" alt="">
+						</div>
+						<h2 class="thumbnail__title">安踏新闻</h2>
+						<a href="" class="thumbnail__link"><i class="thumbnail__arrow">&gt;</i>热销商品</a>
+					</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script>
+	</script>
+</body>
+
+</html>

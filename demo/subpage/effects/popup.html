@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<link rel="icon" href="img/logo.ico">
+	<link rel="stylesheet" href="css/popup.css">
+	<style>
+		.popup {
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="main">
+		<div class="popup">
+			<div class="shade"></div>
+			<a href="#" class="open">点击查看效果</a>
+			<div class="login">
+				<h4>请输入正确的用户名和密码</h4>
+				<a href="#" class="close" >×</a>
+				<div class="info">
+					<label for="name">用户名</label>
+					<input type="text" id="name" placeholder="手机号码/注册邮箱">
+					<strong class="prompt">请输入可用的用户名</strong>
+					<br>
+					<span id="name-filter">用户提示</span>
+					<label for="password">密码</label>
+					<input type="password" id="password">
+					<strong class="prompt">请输入正确的密码</strong><br>
+					<button id="reset">重置</button>
+					<button id="login">登录</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-1.8.0.js"></script>
+<script src="js/popup.js"></script>
+<script>
+</script>
+</html>

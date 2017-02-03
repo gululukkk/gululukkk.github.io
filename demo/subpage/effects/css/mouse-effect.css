@@ -1,0 +1,201 @@
+
+/*鼠标跟随效果*/
+.mouse-effect {
+	float: left;
+	width: 900px;
+	height: 500px;
+}
+
+.mouse-follow {
+	position: relative;
+	width: 940px;
+	height: 50px;
+	background: #000;
+}
+
+.mouse-follow > a{
+	float: left;
+	display: block;
+	width: 120px;
+	height: 50px;
+	margin-left: 20px;
+	background: #f00;
+	color: #fff;
+	text-align:center;
+	text-decoration:none;
+	font-weight: bold;
+	line-height:50px;
+}
+
+.mouse-follow > a:hover {
+	text-decoration:underline;
+}
+
+.mouse-follow > .slid {
+	position: absolute;
+	left:0px;
+	bottom: 0;
+	width: 120px;
+	height: 0;
+	margin-left: 20px;
+	border-width: 4px 0 4px 0;
+	border-style:solid;
+	border-color:#fff;
+}
+
+/*仿UC鼠标导航效果*/
+.ico-transform {
+	width: 900px;
+	height: 250px;
+	margin-top: 35px;
+	border-bottom:2px solid #eee;
+}
+
+.ico-transform > a {
+	display: inline-block;
+	width: 130px;
+	height: 150px;
+	margin-top: 20px;
+	margin-left: 34px;
+}
+
+.ico-transform > a > .round {
+	visibility:hidden;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	margin-top: 20px;
+	border:1px solid #eee;
+	border-radius: 50px;
+	transform:scale(1.3);
+	transition:all 200ms ease;
+}
+
+.ico-transform > a:hover > .round {
+	visibility:visible;
+	transform:scale(1.2);
+}
+
+.ico-transform > a > .ico {
+	overflow:hidden;
+	width: 72px;
+	height: 83px;
+	margin: auto;
+	margin-top: -100px;
+	background: url(../img/uc-ico.png);
+}
+
+.down:nth-child(1) > .ico {
+	background-position:-979px 5px;
+	transition:all 200ms ease;
+}
+
+.down:nth-child(1):hover > .ico {
+	background-position:-979px -120px;
+}
+
+.down:nth-child(2) > .ico {
+	background-position:-142px 5px;
+	transition:all 200ms ease;
+}
+
+.down:nth-child(2):hover > .ico {
+	background-position:-142px -120px;
+}
+
+.down:nth-child(3) > .ico {
+	background-position:-284px 5px;
+	transition:all 200ms ease;
+}
+
+.down:nth-child(3):hover > .ico {
+	background-position:-284px -120px;
+}
+
+.down:nth-child(4) > .ico {
+	background-position:-426px 5px;
+	transition:all 200ms ease;
+}
+
+.down:nth-child(4):hover > .ico {
+	background-position:-426px -120px;
+}
+
+.down:nth-child(5) > .ico {
+	background-position:-568px 5px;
+	transition:all 200ms ease;
+}
+
+.down:nth-child(5):hover > .ico {
+	background-position:-568px -120px;
+}
+
+.ico > div {
+	position: absolute;
+	margin-top: 88px;
+	transition:all 200ms ease;
+	color: #F60;
+	text-decoration: none;
+	font-size:13px;
+}
+
+.ico > div > p {
+	height: 24px;
+	border: 1px solid #f60;
+	border-radius:6px;
+	text-align:center;
+	line-height:24px;
+	text-decoration:none;
+}
+
+.ico > div > p:hover {
+	background: #f60;
+	color: #fff;
+}
+
+.ico-transform > a:hover > .ico > div {
+	margin-top: 4px;
+}
+
+.ico-transform > a > p {
+	position: absolute;
+	width: 86px;
+	height: 18px;
+	margin-top: 0px;
+	margin-left: 27px;
+	text-align:center;
+	font-size:12px;
+	color:#000;
+}
+
+.ico-transform > a > .update {
+	display:none;
+	width: 90px;
+	margin-top: 29px;
+	margin-left: 25px;
+	color: #444;
+}
+
+.ico-transform > a:hover > .update {
+	display: block;
+}
+
+.ico-transform > a > p:nth-of-type(2) {
+	display:none;
+}
+
+.ico-transform > a:hover > p:nth-of-type(2) {
+	display: block;
+}
+
+.ico-transform > a:hover > p:nth-of-type(1) {
+	display:none;
+}
+
+.pad > .ico {
+	position: relative;
+	width: 72px;
+	height: 90px;
+	margin: auto;
+	margin-top: -100px;
+}

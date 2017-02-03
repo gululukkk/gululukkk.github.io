@@ -1,0 +1,311 @@
+/* 自定义字体 开始 */
+
+@font-face {
+	font-family: "wumiao";
+	src: url("../font/FZMWFont.ttf");
+}
+
+
+/* 自定义字体 结束 */
+
+
+/* 初始化 开始 */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	overflow: scroll;
+	background: #F5F5F5;
+}
+
+html,
+body,
+ul,
+dl,
+dd{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* 初始化 结束 */
+
+
+/* 全局通用样式，前缀为g 开始 */
+
+
+/* 布局样式 开始 */
+
+.g-ofh {
+	overflow: hidden;
+}
+
+.g-fll {
+	float: left;
+}
+
+.g-por {
+	position: relative;
+}
+
+.g-poa {
+	position: absolute;
+}
+
+
+/* 布局样式 结束 */
+
+
+/* 元素盒模型属性 开始 */
+
+.g-w100 {
+	width: 100px;
+}
+
+.g-ma {
+	margin: 0 auto;
+}
+
+
+/* 元素盒模型属性 结束 */
+
+
+/* 背景属性 开始*/
+
+.g-bgfff {
+	background: #fff;
+}
+/* 背景属性 结束*/
+
+
+/* 文本属性 开始 */
+.g-c000 {
+	color: #000;
+}
+
+.g-cfff {
+	color: #fff;
+}
+
+.g-tc {
+	text-align: center;
+}
+
+
+/* 文本属性 结束 */
+
+
+/* 全局通用样式，前缀为g 结束 */
+
+
+/* header开始 */
+
+#header {
+	height: 75px;
+	padding-top: 30px;
+	margin-top: 20px;
+	background: #000;
+}
+
+.center {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#login {
+	float: right;
+	width: 200px;
+	height:50px;
+	padding: 0;
+	color: #fff;
+	font: 25px "微软雅黑";
+	border: none;
+	border-radius: 10px;
+	box-shadow:0px 0px 3px #f00;
+	background: #6AA2E0;
+}
+
+
+/* header结束 */
+
+
+/* 顶导航 开始*/
+
+#topnav {
+	height: 46px;
+	border-top: 5px solid #1a1a1a;
+	background: #333;
+	font: 20px "wumiao";
+}
+
+#topnav .mainnav {
+	z-index:1500;
+	width: 600px;
+	padding-left: 30%;
+}
+
+#topnav .item {
+	float: left;
+	z-index: 0;
+	color: #fff;
+	transition: color 2s ease;
+}
+
+#topnav .mainnav .item {
+	box-sizing: border-box;
+	padding: 12px 0;
+	width: 120px;
+	height: 46px;
+}
+
+#topnav .slidebar {
+	z-index:-1;
+	width:120px;
+	height: 46px;
+	background: #1a1a1a;
+}
+
+#topnav .item:hover {
+	color: #f00;
+}
+
+#topnav .subnav {
+	box-sizing:border-box;
+	display: none;
+	width: 100%;
+	padding-left: 30%;
+	background: #1A1A1A;
+}
+
+#topnav .subnav .item {
+	height: 1rem;
+	padding: 15px 25px;
+}
+
+#topnav .subnav .item:hover {
+	background: #333;
+}
+
+
+/* 顶导航 结束*/
+
+/* 页面主体 开始 */
+#main {
+	overflow:hidden;
+    position: relative;
+    min-width:1278px;
+	margin: auto;
+	margin-top: 40px;
+	color: #000;
+}
+
+#main .title {
+	font: 1.5rem/3rem "微软雅黑";
+}
+
+#main .title {
+	padding-left: 20px;
+}
+
+#main .title .text {
+	margin-left: 20px;
+}
+
+/* 侧导航 开始 */
+
+/* for left-slidebar & right-slidebar 开始 */
+.g-slidebar {
+	padding:0 8px;
+	border-top: 4px solid #000;
+	background: #fff;
+}
+
+.g-slidebar .slidebar-title {
+	padding-left: 20px;
+}
+
+.g-slidebar dd {
+	padding: 0 20px;
+	margin-bottom: -1px;
+	border-bottom: 1px dashed gray;
+	line-height: 2.5;
+}
+
+.g-slidebar a {
+	color:#4f4f4f;
+	transition:color 300ms linear;
+}
+
+.g-slidebar a:hover {
+	color: #ff6465;
+}
+
+.g-slidebar img {
+	margin-right: 20px;
+	vertical-align:middle;
+}
+/* for left-slidebar & right-slidebar 结束 */
+
+/* 左右侧导航 开始*/
+#left-slidebar {
+	float: left;
+	margin:0 20px 0 0;
+}
+
+#right-slidebar {
+	float: right;
+}
+
+/* 左右侧导航 结束 */
+
+/* 侧导航 结束 */
+
+/* 图片轮播 开始 */
+#picture-show {
+	position: absolute;
+    left: 48%;
+    margin-left: -295px;
+}
+
+#picture-show img {
+	width: 590px;
+	height: 304px;
+}
+/* 图片轮播 结束 */
+
+/* 页面主体 结束 */
+
+/* 页面尾部 开始 */
+
+#footer {
+	background: #fff;
+}
+
+#friendlink {
+	box-sizing:border-box;
+	width: 80%;
+	padding: 0 20px 20px;
+	margin: auto;
+}
+
+#friendlink .title {
+	color: #f00;
+	font-size: 20px;
+}
+
+#friendlink a {
+	margin-right: 20px;
+	font:12px/2 '微软雅黑';
+	color: #858585;
+}
+
+#friendlink a:hover {
+	color: #f00;
+}
+/* 页面尾部 结束 */

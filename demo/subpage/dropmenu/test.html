@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<style>
+.f {
+	height: 0;
+}
+</style>
+<body>
+<div>
+	<ul class="f">
+		<li>第一个</li>
+		<li>第二个</li>
+	</ul>
+	<div class="g">又又c</div>
+</div>
+
+</body>
+<script src="jquery-1.8.0.js">
+</script>
+<script>
+	$(".f").animate({"height":"0",},5000,function() {
+		alert("abc");
+	});
+</script>
+</html>

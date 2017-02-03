@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .stage {
+            perspective: 1000px;
+        }
+        
+        .picplay {
+            width: 321px;
+            margin: auto;
+            margin-top: 100px;
+            border: 1px solid #f00;
+            transform-style: preserve-3d;
+            transition:all 2s linear;
+        }
+        
+        .picplay__pic {
+            position: absolute;
+            width: 325px;
+            border-radius: 25px;
+            box-shadow:0 0 10px #000;
+            -webkit-user-select:none;
+        }
+        
+        .picplay__pic:nth-child(1) {
+            transform: rotateY(0deg) translateZ(320px);
+        }
+        
+        .picplay__pic:nth-child(2) {
+            transform: rotateY(60deg) translateZ(320px);
+        }
+        
+        .picplay__pic:nth-child(3) {
+            transform: rotateY(120deg) translateZ(320px);
+        }
+        
+        .picplay__pic:nth-child(4) {
+            transform: rotateY(180deg) translateZ(320px);
+        }
+        
+        .picplay__pic:nth-child(5) {
+            transform: rotateY(240deg) translateZ(320px);
+        }
+        
+        .picplay__pic:nth-child(6) {
+            transform: rotateY(300deg) translateZ(320px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="picplay">
+            <img src="../images/3dpic1.webp" alt="" class="picplay__pic">
+            <img src="../images/3dpic2.jpg" alt="" class="picplay__pic">
+            <img src="../images/3dpic3.jpg" alt="" class="picplay__pic">
+            <img src="../images/3dpic4.jpg" alt="" class="picplay__pic">
+            <img src="../images/3dpic5.webp" alt="" class="picplay__pic">
+            <img src="../images/3dpic6.jpg" alt="" class="picplay__pic">
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        {
+            let deg = 60;
+            let rotateY = function () {
+                let fina_deg = 0;
+                return function ($elem, add_deg) {
+                    fina_deg += add_deg;
+                    $elem.css('transform','rotateY(' + fina_deg + 'deg)');
+                };
+            }();
+            $('.picplay').click(function() {
+                rotateY($(this),60);
+            });
+        }
+    </script>
+</body>
+
+</html>

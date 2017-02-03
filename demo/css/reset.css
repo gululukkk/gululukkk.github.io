@@ -1,0 +1,19 @@
+html {
+	font-size: 62.5%;
+}
+html,
+body,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style-type:none;
+}
+a {
+	color: inherit;
+	text-decoration:none;
+}

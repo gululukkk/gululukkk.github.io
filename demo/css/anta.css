@@ -1,0 +1,184 @@
+html {
+	font-size: 62.5em;
+}
+
+h2 {
+	margin: 0;
+}
+
+.firstRow {
+	height: 20px;
+	background: #000;
+}
+
+.firstRow__welcome {
+	display: inline-block;
+	color: rgb(255, 255, 255);
+}
+
+#wrap .col12 {
+	padding: 0;
+	border-width: 1px 0 0;
+	border-color: #fff;
+	border-style: solid;
+	box-shadow: 0 0 16px #000;
+	background-image: linear-gradient(to bottom, #EBEBEB, #FBFBFB 20%, #CECECE);
+}
+
+#wrap .menu {
+	display: table;
+	margin: auto;
+	line-height: 40px;
+}
+
+#wrap .logo {
+	float: left;
+	width: 108px;
+}
+
+#wrap .logo img {
+	height: 26px;
+}
+
+a,
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.topNav {
+	float: left;
+}
+
+.topNav__item {
+	float: left;
+	width: 84px;
+	border-left: 1px #fff solid;
+	border-right: 1px #c0c0c0 solid;
+}
+
+.topNav__item:hover {
+	background-image: linear-gradient(to top, #F8F8F9, #D1D1D1);
+}
+
+.phoneNav {
+	display: none;
+}
+
+@media screen and (max-width:628px) {
+	#wrap .col12 {
+		background-image: none;
+	}
+	#wrap .menu {
+		display: block;
+	}
+	.topNav {
+		display: none;
+	}
+	.phoneNav {
+		display: block;
+		float: right;
+	}
+	.phoneNav__wrap {
+		float: left;
+		padding: 7px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #fff;
+	}
+	.phoneNav__menuBtn {
+		box-sizing: content-box;
+		width: 30px;
+		height: 4px;
+		padding: 4px 0;
+		border: 4px solid red;
+		border-left: none;
+		border-right: none;
+		background-clip: content-box;
+		background-color: red;
+	}
+	.phoneNav__languageBtn,
+	.phoneNav__userBtn {
+		float: left;
+		width: 46px;
+		height: 36px;
+	}
+	.phoneNav__userBtn img,
+	.phoneNav__languageBtn img {
+		vertical-align: top;
+		height: 100%;
+		width: 100%;
+	}
+	.phoneNav__userBtn {
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	.phoneNav__languageBtn,
+	.phoneNav__userBtn {
+		margin-left: 25px;
+	}
+}
+
+.classify {
+	overflow: hidden;
+	width: 80%;
+	margin: 20px auto 0;
+}
+
+.thumbnail {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+
+.thumbnail__img {
+	display: inline-block;
+}
+
+.thumbnail:nth-child(1),
+.thumbnail:nth-child(2) {
+	margin-right: 5%;
+}
+
+.thumbnail__title {
+	font-family: "微软雅黑";
+}
+
+.thumbnail__img img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.thumbnail__arrow {
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin-right: 0.5vw;
+	border-radius: 50%;
+	color: #fff;
+	background-image: linear-gradient(to bottom, #EEEEEE, #D1D1D1);
+}
+
+.thumbnail__link:hover {
+	color: #f00;
+}
+
+.thumbnail__link:hover .thumbnail__arrow {
+	color: #fff;
+	background-image: linear-gradient(to bottom, #E62129, #C20911);
+}
+
+@media screen and (max-width:543px) {
+	.thumbnail {
+		margin-left: 0;
+	}
+	.thumbnail__title {
+		font-size: 15px;
+	}
+	.thumbnail__link {
+		font-size: 12px;
+	}
+	.thumbnail__arrow {
+		display: none;
+	}
+}

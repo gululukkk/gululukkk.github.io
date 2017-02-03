@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天猫图片轮播</title>
+</head>
+<style>
+	ul,li{margin:0;padding:0;}
+
+	.box {
+		position:relative;
+		width:1180px;
+		height:500px;
+		overflow:hidden;
+		margin:0 auto;
+		margin-top:100px;
+	}
+
+	.pic ul {
+		margin:0;
+		padding:0;
+	}
+
+	.pic ul li {
+		width:1180px;
+		height:500px;
+		list-style-type:none;
+	}
+
+	.nav ul{
+		position:absolute;
+		right:28px;
+		bottom:21px;
+		list-style-type:none;
+	}
+
+	.nav ul li {
+		position:relative;
+		float:left;
+		width:12px;
+		height:12px;
+		border:2px solid #fff;
+		border-radius:6px;
+		margin-right:10px;
+		overflow:hidden;
+		cursor:pointer;
+	}
+	
+	.nav ul li div {
+		position:absolute;
+		top:0;
+		width:14px;
+		height:14px;
+		background:#fff;
+	}
+</style>
+<body>
+	<div class="box">
+		<div  class="pic">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="nav">
+			<ul>
+				<li>
+					<div></div>
+				</li>
+				<li>
+					<div></div>
+				</li>
+				<li>
+					<div></div>
+				</li>
+				<li>
+					<div></div>
+				</li>
+				<li>
+					<div></div>
+				</li>
+				<li>
+					<div></div>
+				</li>
+			<ul>
+		</div>
+	</div>
+</body>
+<script src="jquery-1.8.0.js"></script>
+<script>
+/*
+	$pic_li = $(".box .pic").children();
+	for (var i = 0;i<$pic_li.length;i++) {
+		var s = i + 1;
+		$pic_li.eq(i).css("background","url(img/" + s + ".jpg)");
+	}
+	这是设置背景图片的另一种方法！
+*/
+
+	$pic_li = $(".pic ul li");
+
+	for (var i = 0;i<$pic_li.length;i++) {
+		var s = i + 1;
+		$pic_li.eq(i).css("background","url(img/" + s + ".jpg)");
+	}
+
+	$nav_li = $(".nav ul li");
+	var j = -1;		//用j变量来存放li的下标
+
+	function jumper() {
+		j++;
+		if(j > 5){j=0;}
+		for (var k = 0;k<$nav_li.length;k++) {
+
+			if (k == j) {continue;}
+
+			$nav_li.children("div").eq(k).fadeIn(1000);
+		}
+		$nav_li.children("div").eq(j).fadeOut(1000);
+		$pic_li.eq(j).fadeIn(100).siblings().fadeOut(100);
+	}
+
+	jumper();
+	time = setInterval(function(){jumper();},3000)
+
+	$nav_li.click(function() {
+		j = $(this).index();
+		for (var k = 0;k<$nav_li.length;k++) {
+			
+			if (k == j) {continue;}
+
+			$nav_li.children("div").eq(k).fadeIn(1000)
+		}		
+		$nav_li.children("div").eq(j).fadeOut(1000);
+		$pic_li.eq(j).fadeIn(100).siblings().fadeOut(100);
+	});
+
+		$nav_li.hover(function() {
+		clearInterval(time);},function() {
+			time = setInterval("jumper()",3000);
+		});
+
+</script>
+</html>

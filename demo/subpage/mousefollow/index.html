@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标跟随效果</title>
+</head>
+<style>
+	body,
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	.nav {
+		width: 1120px;
+		height: 27px;
+		margin: 0 auto;
+		margin-top: 77px;
+		background: url(img/logo.png) no-repeat;
+	}
+
+	.nav ul {
+		position: relative;
+		float: right;
+	}
+
+	.nav ul .txt {
+		float: left;
+		margin-top: 2px;
+		margin-left: 25px;
+		list-style-type: none;
+		font:17px "微软雅黑";
+	}
+
+	.nav ul li a {
+		color: #00f;
+		text-decoration:none;
+	}
+
+	.nav .bd {
+		position: absolute;
+		top: -6px;
+		left: 0px;
+		z-index: -1;
+		width: 65px;
+		height: 35px;
+		margin-left: 25px;
+		border: 1px solid #f00;
+		list-style-type: none;
+		border-radius: 12px;
+	}
+</style>
+<body>
+	<div class="nav">
+		<ul>
+			<li class="txt"><a href="">天猫超市</a></li>
+			<li class="txt"><a href="">喵鲜生</a></li>
+			<li class="txt"><a href="">品牌街</a></li>
+			<li class="txt"><a href="">阿里旅行>></a></li>
+			<li class="bd"></li>
+		</ul>
+	</div>
+	<script src="jquery-1.8.0.js"></script>
+	<script>
+		$(".nav ul li.txt").hover(function(){
+			i = $(this).index();
+			var li_Left = $(this).position().left;
+			var li_Width = $(this).width();
+			$(".bd").stop(true).animate({left:li_Left-1+"px",width:li_Width+1+"px",},500)
+		},function(){});
+	</script>
+</body>
+</html>

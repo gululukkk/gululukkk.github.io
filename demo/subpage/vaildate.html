@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title></title>
+	<style>
+		.form-mt {
+			margin-top: 100px;
+		}
+		
+		.hint {
+			position: absolute;
+			top: 125px;
+			left: 100%;
+			width: 200px;
+			padding: 6px 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		
+		@media screen and (max-width:992px) {
+			.hint {
+				display: none;
+			}
+		}
+		
+		@media screen and (max-width:1200px) {
+			.radio-inline {
+				display: block;
+				margin-left: 0 !important;
+			}
+			.checkbox-inline {
+				display: block;
+				margin-left: 0 !important;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-md-offset-3">
+				<form class="form form-mt">
+					<div class="form-group">
+						<label for="username">用户名</label>
+						<input type="text" class="form-control" id="username" placeholder="用户名">
+						<div class="hint">提示信息</div>
+					</div>
+					<label class="radio-inline">
+						<input type="radio" value="option1" name="option" id="onlyNum" data-rule="isOnlyNumber">限制只能输入数字
+					</label>
+					<label class="radio-inline">
+						<input type="radio" value="option1" name="option" id="limitStrLen" data-rule="setMaxLength">限制只能输入15个字符
+					</label>
+					<label class="radio-inline">
+						<input type="radio" value="option1" name="option" id="noChineseChar" data-rule="isNoChineseChar">禁止输入中文
+					</label>
+					<br />
+					<label class="checkbox-inline" for="ban_copy">
+						<input type="checkbox" id="ban_copy" value="option1">禁止复制</label>
+					<label class="checkbox-inline" for="ban_cut">
+						<input type="checkbox" id="ban_cut" value="option2">禁止剪切</label>
+					<label class="checkbox-inline" for="ban_paste">
+						<input type="checkbox" id="ban_paste" value="option3">禁止粘贴</label>
+					<label class="checkbox-inline" for="ban_contextmenu">
+						<input type="checkbox" id="ban_contextmenu" value="option3">禁止右键菜单</label>
+					<label class="checkbox-inline" for="all_checked">
+						<input type="checkbox" id="all_checked" value="option3">全选</label>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/vaildate.js"></script>
+	<script>
+		
+	</script>
+</body>
+
+</html>

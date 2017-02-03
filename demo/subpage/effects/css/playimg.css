@@ -1,0 +1,61 @@
+.head {
+	width: 530px;
+	height: 170px;
+	margin: auto;
+}
+
+.head > .logo {
+	width: 170px;
+	height: 170px;
+}
+
+.head > h1 {
+	display: inline;
+}
+
+.main {
+	margin-top: 80px;
+}
+
+.js-play {
+	clear:left;
+}
+
+.js-play > .show-window,
+.jq-play > .show-window {
+	position: relative;
+	width: 520px;
+	height: 280px;
+	overflow:hidden;
+	margin: auto;
+}
+
+.show-window > .img-box {
+	position: relative;
+	width: 2600px;
+}
+
+.show-window > .nav-circle {
+	position: absolute;
+	right: 260px;
+	bottom: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+.show-window > .nav-circle > li {
+	float: left;
+	list-style-type:none;
+	width: 10px;
+	height: 10px;
+	margin-left: 10px;
+	border: 1px solid #B7B7B7;
+	border-radius: 5px;
+	background: #B7B7B7;
+	cursor:pointer;
+}
+
+.show-window > .nav-circle >.on {
+	background: #fff;
+}
+

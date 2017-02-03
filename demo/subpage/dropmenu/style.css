@@ -1,0 +1,56 @@
+	html {
+		overflow-y:scroll;
+	}
+	ul {
+		list-style-type:none;
+		margin: 0;
+		padding: 0;
+
+	}
+
+	.container {
+		width: 380px;
+		margin: 0 auto;
+		padding: 5px;
+		border: 15px solid #EEEEEE;
+		border-radius: 15px;
+	}
+	
+	.class-list-click {
+		background: #09F;
+	}
+	.class-list > a {
+		display: block;
+		width: 380px;
+		height: 30px;
+		border-bottom: 1px solid #fff;
+		background: #99CC00;
+		color: #fff;
+		text-indent: 18px;
+		line-height: 30px;
+		text-decoration:none;
+		font-weight:bold;
+	}
+	
+	.child-list {
+		display: none;
+		height:0;
+		overflow:hidden;
+	}
+
+	.child-list > a {
+		display: block;
+		height: 32px;
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		background: #7CF;
+		font-size:13px;
+		color: #fff;
+		text-indent: 18px;
+		line-height: 30px;
+		text-decoration:none;
+	}
+
+	.child-list > a:hover {
+		text-decoration: underline;
+	}

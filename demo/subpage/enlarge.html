@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .enlarge {
+            display: table;
+            margin: 100px auto 0;
+        }
+
+        .enlarge__smallWrap {
+            position: relative;
+            display: table-cell;
+        }
+
+        .enlarge__bigWrap {
+            position: fixed;
+            padding:10px;
+            border:5px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <a class="enlarge" href="">
+        <div class="enlarge__smallWrap">
+            <img src="../images/cc.jpg" alt="" class="enlarge__smallPic">
+        </div>
+        <div class="enlarge__bigWrap">
+            <img src="../images/cc.jpg" alt="" title="../images/3dpic2.jpg" class="enlarge__bigPic">
+        </div>
+    </a>
+    <script src="../js/zoom.js"></script>
+    <script>
+    let zoom_wrap = document.querySelector(".enlarge");
+    let new_zoom = new H.Zoom({zoom_wrap,scale:3});
+    </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/*	显示边框	*/
+
+.bdBlue {
+    border: 1px solid #00f;
+}
+
+.bgRed {
+    background-color: #f00;
+}
+
+
+/*	正文	*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #E9EDF1;
+}
+
+h4 {
+    height: 22px;
+}
+
+
+/*	重用模块	*/
+
+.fll {
+    float: left;
+}
+
+.flr {
+    float: right;
+}
+
+.por {
+    position: relative;
+}
+
+.blockCenter {
+    margin: auto;
+}
+
+.mt_22 {
+    margin-top: 22px;
+}
+
+.mr_21 {
+    margin-right: 21px;
+}
+
+.ml_22 {
+    margin-left: 22px;
+}
+
+.tCenter {
+    text-align: center;
+}
+
+.cBlack {
+    color: #000;
+}
+
+.cGray {
+    color: #93999F;
+}
+
+.cWhite {
+    color: #fff;
+}
+
+.tdNone {
+    text-decoration: none;
+}
+
+.fzSmall {
+    font-size: 12px;
+}
+
+
+/*	开始	*/
+
+.main {
+    width: 1192px;
+    height: 364px;
+    margin-top: 50px;
+}
+
+.main div {
+    overflow: hidden;
+}
+
+
+/*	模块1	*/
+
+.jobType {
+    height: 100%;
+    width: 206px;
+    background: url(../img/jobType1.png) no-repeat;
+}
+
+.jobType > p {
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+.mainMedium {
+    width: 468px;
+    height: 172px;
+}
+
+.mainMedium > p {
+    margin-top: 75px;
+    font: bold 20px/1 "微软雅黑";
+}
+
+.mainSmall {
+    position: relative;
+    width: 226px;
+    height: 172px;
+}
+
+.mainTall {
+    position: relative;
+    width: 224px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.bg1 {
+    background: url(../img/area1-bg.jpg) no-repeat;
+}
+
+.bg2 {
+    background: url(../img/area2-bg.jpg) no-repeat;
+}
+
+.bg3 {
+    background: url(../img/area3-bg.jpg) no-repeat;
+}
+
+.bg4 {
+    background: url(../img/area4-bg.jpg) no-repeat;
+}
+
+.bg5 {
+    background: url(../img/area5-bg.jpg) no-repeat;
+}
+
+.mainTall {
+    background-color: #fff;
+}
+
+.mainSmall-box {
+    width: 226px;
+    height: 172px;
+    margin-top: 61px;
+    background: #fff;
+}
+
+.mainSmall-boxBottom {
+    position: absolute;
+    top: 126px;
+    width: 226px;
+    height: 46px;
+    background: #fff;
+}
+
+.navList {
+    position: absolute;
+    right: 21px;
+    bottom: 0;
+    width: 181px;
+    height: 192px;
+}
+
+.navList > a {
+    display: block;
+    margin-top: 17px;
+    color: #000;
+    text-decoration: none;
+}
+
+.navList > a:hover {
+    color: #f00;
+}

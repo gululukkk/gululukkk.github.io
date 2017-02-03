@@ -1,0 +1,529 @@
+@font-face {
+	font-family: "wumiao";
+	src: url("../font/FZMWFont.ttf");
+}
+/* 去除默认样式 */
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* 所有a标签的默认样式 */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* 壁纸集合与网站尾部下的超链接悬停样式 */
+
+.wallpaperset a:hover,
+.footer a:hover {
+    color: #298BD9;
+    text-decoration: underline;
+}
+
+/* 网站头部 */
+.header {
+    width: 100%;
+    height: 72px;
+    background: url(../img/head_bg.gif) repeat-x;
+}
+
+.head_container {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    width: 160px;
+    height: 35px;
+    margin-top: 21px;
+    background: url(../img/headlogo.gif);
+}
+
+.tab_menu {
+    float: left;
+    height: 67px;
+    margin-top: 5px;
+    margin-left: 44px;
+}
+
+.tab_menu li {
+    float: left;
+    height: 100%;
+    line-height: 68px;
+}
+
+.tab_menu a {
+    padding: 22px 10px;
+    text-decoration: none;
+    color: #333;
+    font-family: "微软雅黑";
+    font-size: 17px;
+}
+
+.tab_menu a:hover {
+    background: #f6f6f6;
+}
+
+
+/* 时钟 */
+
+#date {
+    float: left;
+    width: 145px;
+    margin-top: 26px;
+    margin-left: 100px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+
+/* 页面容器 */
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+
+/* 图片轮播窗口 */
+
+.picshow {
+    overflow: hidden;
+}
+
+.picshow_win {
+    float: left;
+    overflow: hidden;
+    width: 700px;
+    height: 375px;
+}
+
+
+/* 图片悬停效果菜单 */
+
+.hover_btn {
+    float: left;
+    overflow: hidden;
+    height: 375px;
+    border-left: 1px solid #fff;
+}
+
+.hover_btn li {
+    height: 47px;
+    padding: 15px 32px 0 15px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.hover_btn li:hover span:nth-child(1) {
+    text-decoration: underline;
+}
+
+.hover_btn a {
+    text-decoration: none;
+}
+
+.hover_btn span {
+    display: block;
+    color: #000;
+}
+
+.hover_btn span:nth-child(1) {
+    font-family: "微软雅黑";
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.hover_btn span:nth-child(2) {
+    margin-top: 4px;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+
+
+/* 选项卡 */
+
+.wallpaper_style {
+    position: relative;
+    margin-top: 36px;
+    border: 1px solid #ccc;
+}
+
+.tab_group {
+    position: absolute;
+    left: 10px;
+    top: -15px;
+}
+
+.tab_group li {
+    float: left;
+    width: 84px;
+    height: 30px;
+    margin-left: 8px;
+    background: #f0f0f0;
+    line-height: 30px;
+}
+
+.tab_underline {
+    border-bottom: 1px solid #000;
+}
+
+.tab_group li a {
+    padding: 7px 14px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tab {
+    padding: 30px 9px 26px;
+}
+
+.opt_list {
+    overflow: hidden;
+}
+
+.opt_list li {
+    float: left;
+    width: 78px;
+    height: 28px;
+    margin-left: 2px;
+    line-height: 29px;
+}
+
+.opt_list a {
+    padding: 8px 15px 8px 15px;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.opt_list li:hover a {
+    color: #fff;
+}
+
+.opt_list li:nth-child(1):hover,
+.opt_list li:nth-child(8):hover,
+.opt_list li:nth-child(15):hover {
+    background: #298BD9;
+}
+
+.opt_list li:nth-child(2):hover,
+.opt_list li:nth-child(9):hover,
+.opt_list li:nth-child(16):hover {
+    background: #8A60B3;
+}
+
+.opt_list li:nth-child(3):hover,
+.opt_list li:nth-child(10):hover,
+.opt_list li:nth-child(17):hover {
+    background: #C00;
+}
+
+.opt_list li:nth-child(4):hover,
+.opt_list li:nth-child(11):hover,
+.opt_list li:nth-child(18):hover {
+    background: #F60;
+}
+
+.opt_list li:nth-child(5):hover,
+.opt_list li:nth-child(12):hover,
+.opt_list li:nth-child(19):hover {
+    background: #FFC300;
+}
+
+.opt_list li:nth-child(6):hover,
+.opt_list li:nth-child(13):hover,
+.opt_list li:nth-child(20):hover {
+    background: #007300;
+}
+
+.opt_list li:nth-child(7):hover,
+.opt_list li:nth-child(14):hover,
+.opt_list li:nth-child(21):hover {
+    background: #00ae9d;
+}
+
+
+/* 壁纸集合 */
+
+.wallpaperset {}
+
+
+/* 左边侧栏 */
+
+.set_left {
+    float: left;
+    width: 682px;
+}
+
+.upload {
+    overflow: hidden;
+}
+
+.upload a:hover {
+    text-decoration: none;
+}
+
+.upload img {
+    vertical-align: bottom;
+}
+.upload_date {
+    width: 117px;
+    height: 57px;
+    padding-left: 20px;
+    background: #f0f0f0;
+    line-height: 49px;
+}
+
+.upload_date .month,
+.upload_date .date {
+    font-family: Georgia;
+}
+
+.upload_date .month {
+    font-size: 24px;
+}
+
+.upload_date .date {
+    vertical-align: top;
+    font-size: 48px;
+}
+
+.wallpaper_info {
+    width: 330px;
+    height: 254px;
+    margin-bottom: 21px;
+}
+
+.wallpaper_info:nth-child(odd) {
+    float: right;
+}
+
+.wallpaper_info:nth-child(even) {
+    float: left;
+}
+
+.wallpaper_info a {
+    text-decoration: none;
+}
+
+.change_opa {
+    position: relative;
+}
+
+.wallpaper_info .style {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 23px;
+    margin-top: -28px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    line-height: 23px;
+    opacity: 0.7;
+}
+
+.change_opa:hover .style {
+    display: inline;
+}
+
+.wallpaper_info .info_box {
+    margin-top: 3px;
+}
+
+.wallpaper_info .info {
+    font-size: 15px;
+}
+
+.wallpaper_info .author {
+    float: right;
+    font-size: 13px;
+}
+
+
+/* 加载图片按钮 */
+
+.load_img {
+    text-align: center;
+}
+
+
+/* 右边侧栏 */
+
+.set_right {
+    float: right;
+}
+
+
+/* 月历集合与推荐集合 */
+
+.calendar_paper,
+.calendar_paper2 {
+    width: 280px;
+    padding: 10px;
+    margin-top: 21px;
+    border: 1px solid #e5e5e5;
+}
+
+.hover_li {
+    border-bottom: 1px dotted #ddd;
+}
+
+.hover_last_li {
+    border-bottom: 1px solid #fff;
+}
+
+.calendar_list li {
+    overflow: hidden;
+    margin-top: 12px;
+    padding-bottom: 12px;
+}
+
+.number {
+    float: left;
+    height: 19px;
+    padding-right: 14px;
+    color: #999;
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.hover_number {
+    height: 50px;
+    color: #FF6500;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.calendar_list a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.little_img,
+.see_count {
+    display: none;
+}
+
+li .hover_little_img {
+    display: inline;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+li .hover_see_count {
+    display: inline-block;
+    padding-left: 20px;
+    margin-top: 19px;
+    color: #999;
+    font-size: 11px;
+}
+
+
+/* 屏幕选择 */
+
+.screen_sel {
+    display: inline-block;
+    width: 261px;
+    margin-top: 20px;
+    padding: 0 14px 27px 27px;
+    border: 1px solid #e5e5e5;
+}
+
+.screen_sel a {
+    display: inline-block;
+    margin: 0 21px 16px 0;
+    text-decoration: none;
+    font-size: 13px;
+}
+.site_map {
+    width: 242px;
+    margin-top: 20px;
+    padding: 0 45px 16px 14px;
+    border: 1px solid #e5e5e5;
+}
+
+.site_map a {
+    display: inline-block;
+    margin: 10px 14px 0 0;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+
+/* 友情链接 */
+
+.anthor_set {
+    padding: 23px 23px 17px;
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;
+    font-size: 13px;
+}
+
+.anthor_set a {
+    display: inline-block;
+    margin: 0 8px 10px 0;
+    text-decoration: none;
+}
+
+.feedback {
+    margin-top: 57px;
+}
+
+.feedback dl {
+    float: left;
+    margin-right: 52px;
+    font-size: 13px;
+}
+
+.feedback dt {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.feedback dd {
+    margin: 0 0 15px;
+}
+
+.feedback a {
+    color: #666;
+    text-decoration: none;
+}
+
+.notice {
+    float: right;
+    text-align: right;
+}
+
+.notice a {
+    color: #666;
+    text-decoration: none;
+}
+
+.notice p {
+    color: #666;
+    font-size: 13px;
+}

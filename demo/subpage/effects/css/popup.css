@@ -1,0 +1,124 @@
+
+.popup {
+	clear: left;
+	width: 600px;
+	height: 350px;
+}
+
+.popup > .shade {
+	display: none;
+	position: fixed;
+	z-index:9998;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	opacity:0.5;
+}
+
+.popup > .open {
+	display: block;
+	width: 100px;
+	height: 24px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border-radius: 3px;
+	background: #0080ff;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font: bold 13px/24px "幼圆";
+}
+
+.login {
+	display:none;
+	position: fixed;
+	z-index:9999;
+	top: 247px;
+	left: 0;
+	width:50%;
+	height: 500px;
+	margin:-164px 0 0 320px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow:0 0 10px;
+}
+
+.login > h4 {
+	height: 50px;
+	border-bottom:2px solid #eee;
+	color: #444;
+	text-indent: 23px;
+}
+
+.login > .close {
+	position: absolute;
+	top: -3px;
+	right: 6px;
+	color: #303030;
+	text-decoration:none;
+	font-size:44px;
+}
+
+.info {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.info > label {
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	margin-top: 30px;
+	margin-left: -140px;
+	text-align:right;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.info > input {
+	width: 200px;
+	height: 30px;
+	border: 1px solid #000;
+}
+
+.info > input:focus{
+	border: 1px solid #00f;
+}
+
+.info > .prompt {
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.info > span {
+	position: absolute;
+	margin-left: -70px;
+	text-align:left;
+}
+
+.info > button {
+	width: 52px;
+	height: 36px;
+	margin-right: 20px;
+	padding: 0;
+	border: none;
+	background: #0080ff;
+	color: #fff;
+	font-weight: bold;
+	cursor:pointer;
+
+}
+
+.info > button:nth-of-type(1) {
+	margin-top: 30px;
+	margin-left: -54px;
+}
+
+.info > button:nth-of-type(2) {
+	color: #fff;
+	background: #f00;
+}
